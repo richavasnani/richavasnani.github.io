@@ -1,0 +1,222 @@
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f48cff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ed47ff;
+}
+
+/* Webpage */
+body {
+    margin: 0;
+    background-color: #f8e7e9; /* Light pink background */
+    text-align: center;
+}
+
+.navbar {
+    background-color: #ffd1d6; /* Slightly darker navbar */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo-img {
+    width: 45px;
+    height: 35px;
+    padding-right: 10px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.home {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.grid-container {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+.grid-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    background-color: #ffccd2;
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);*/
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.card img {
+    transition: transform 0.2s ease-in-out;
+}
+
+/*.card img:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}*/
+
+.img-square-container {
+    position: relative;
+    width: 100%;
+    height: 0%;
+    padding-bottom: 100%;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.img-square-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #ffccd2;
+    z-index: 1;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.caption p {
+    margin-top: 5px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 55px;
+    color: #ffffff;
+}
+
+.text {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8e7e9; /* Pink footer background */
+    padding: 20px;
+}
+
+.footer .website-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    background-color: #e1306c;
+}
+
+.footer .social-icons a:hover {
+    background-color: #47063f;
+}
+
+.footer .social-icons i {
+    color: #fff;
+    font-size: 24px;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .website-name {
+        margin-bottom: 0;
+    }
+
+    .footer .social-icons {
+        justify-content: center;
+    }
+
+    .footer .website-name {
+        margin-bottom: 15px;
+    }
+}
+
+
+/*<footer class="footer" id="footer">
+      <div class="website-name"> Riva's Embroidery by Richa Vasnani </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/riva's_embroidery" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.amazon.in" target="_blank">
+          <i class="fab fa-amazon"></i>
+        </a>
+      </div>
+    </footer>*/
